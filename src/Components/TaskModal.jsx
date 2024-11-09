@@ -48,7 +48,6 @@ const TaskModal = ({ task, onClose, onAdd, isEdit }) => {
             onChange={handleChange}
             placeholder="Task name"
             required
-            className="fixed-input"
           />
           <textarea
             name="description"
@@ -56,7 +55,6 @@ const TaskModal = ({ task, onClose, onAdd, isEdit }) => {
             onChange={handleChange}
             placeholder="Description"
             required
-            className="fixed-textarea"
           />
           <input
             type="text"
@@ -65,7 +63,6 @@ const TaskModal = ({ task, onClose, onAdd, isEdit }) => {
             onChange={handleChange}
             placeholder="Creator"
             required
-            className="fixed-input"
           />
           <button type="submit" className="submit-task-btn">
             {isEdit ? "Save changes" : "Add task"}

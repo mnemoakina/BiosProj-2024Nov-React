@@ -54,13 +54,19 @@ const App = () => {
 
   const toggleComplete = (task) => {
     const updatedTask = { ...task, isCompleted: !task.isCompleted };
-    updateTask(updatedTask);
+    axios
+      .put(`http://localhost:5000/todos/${task.id}`, updatedTask)
+      .then(() => {
+        setTasks((prevTasks) =>
+          prevTasks.map((t) => (t.id === task.id ? updatedTask : t))
+        );
+      });
     setShowStatusChangeModal(null);
   };
 
   return (
     <div className="app-container">
-      <h1 className="app-title">IMPRENTA TODO LIST</h1>
+      <h1 className="app-title">TO-DO LIST</h1>
       <div className="header-controls">
         <button onClick={() => setFilter("all")} className="filter-button">
           All

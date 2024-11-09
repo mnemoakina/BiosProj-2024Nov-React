@@ -1,14 +1,13 @@
+/* Global Styles */
 body {
-  background-color: #1e1e2f;
-  color: #d4d4dc;
-  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  overflow-x: hidden;
+  background-color: #1e1e2f;
+  color: #e0e0e0;
 }
 
 .app-container {
@@ -20,6 +19,7 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+/* Title Style */
 .app-title {
   font-size: 2.5rem;
   color: #61afef;
@@ -29,6 +29,69 @@ body {
   animation: fadeInTitle 3s ease-in-out infinite alternate;
 }
 
+/* Task Item Container */
+.task-item {
+  background-color: #33334d;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-3px);
+}
+
+.task-item.completed {
+  border-left: 5px solid #4CAF50;
+}
+
+.task-item.pending {
+  border-left: 5px solid #ffab00;
+}
+
+.task-title {
+  font-size: 1.5rem;
+  color: #61afef;
+}
+
+.task-description {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.task-creator {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 10px;
+}
+
+/* Task Status Icon */
+.task-status-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+/* Button Styles */
+.button-container button {
+  padding: 8px 16px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #61afef;
+}
+
+/* Modal Styles */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -49,22 +112,28 @@ body {
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
   width: 100%;
   max-width: 400px;
-  position: relative;
   color: #e0e0e0;
 }
 
-.confirm-btn {
-  background-color: #61afef;
-  color: #1e1e2f;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 5px;
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #61afef;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.confirm-btn:hover {
-  background-color: #569cd6;
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #3a3a55;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  resize: none;
 }
-
-/* Additional classes for buttons and modal elements */

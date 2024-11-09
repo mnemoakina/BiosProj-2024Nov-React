@@ -1,21 +1,20 @@
+import React from "react";
+
 const TodoItem = ({ task, onEditTask, onDeleteTask, onToggleComplete }) => {
   return (
-    <li className="task">
-      <h3>{task.name}</h3>
-      <p>{task.description}</p>
-      <small>{task.creator}</small>
+    <div className={`task-item ${task.isCompleted ? "completed" : "pending"}`}>
+      <h3 className="task-title">{task.name}</h3>
+      <p className="task-description">{task.description}</p>
+      <span className="task-creator">Created by: {task.creator}</span>
+      <div className="task-status-icon">{task.isCompleted ? "✔️" : "⏳"}</div>
       <div className="button-container">
-        <button onClick={() => onToggleComplete(task)} className="complete-btn">
+        <button onClick={() => onToggleComplete(task)}>
           {task.isCompleted ? "Undo" : "Complete"}
         </button>
-        <button onClick={() => onEditTask(task)} className="edit-btn">
-          Edit
-        </button>
-        <button onClick={() => onDeleteTask(task)} className="delete-btn">
-          Delete
-        </button>
+        <button onClick={() => onEditTask(task)}>Edit</button>
+        <button onClick={() => onDeleteTask(task)}>Delete</button>
       </div>
-    </li>
+    </div>
   );
 };
 
