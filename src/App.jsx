@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
+import "./index.css";
 import TodoList from "./Components/TodoList";
 import TaskModal from "./Components/TaskModal";
-import TaskDetailModal from "./Components/TaskDetailModal"; // Nuevo componente
+import TaskDetailModal from "./Components/TaskDetailModal";
 import ConfirmationModal from "./Components/ConfirmationModal";
-import "./index.css";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -13,7 +13,7 @@ const App = () => {
   const [editTask, setEditTask] = useState(null);
   const [showDeleteModal, setShowDeleteModal] = useState(null);
   const [showStatusChangeModal, setShowStatusChangeModal] = useState(null);
-  const [viewTask, setViewTask] = useState(null); // Estado para el modal de detalles
+  const [viewTask, setViewTask] = useState(null);
 
   useEffect(() => {
     axios.get("http://localhost:5000/todos").then((response) => {
@@ -91,7 +91,7 @@ const App = () => {
         onEditTask={(task) => setEditTask(task)}
         onDeleteTask={(task) => setShowDeleteModal(task)}
         onToggleComplete={(task) => setShowStatusChangeModal(task)}
-        onViewDetails={(task) => setViewTask(task)} // Nuevo prop para abrir el modal de detalles
+        onViewDetails={(task) => setViewTask(task)}
       />
       {showAddModal && (
         <TaskModal onClose={() => setShowAddModal(false)} onAdd={addTask} />

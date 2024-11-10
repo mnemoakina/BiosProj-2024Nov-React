@@ -8,11 +8,9 @@ const TaskModal = ({ task, onClose, onAdd, isEdit }) => {
     isCompleted: false,
   });
 
-  // Simula un desplazamiento hacia la posición actual del usuario
+  
   useEffect(() => {
-    // Guarda el desplazamiento actual del usuario
     const scrollY = window.scrollY;
-    // Ajusta la posición del modal para que esté cerca del usuario
     window.scrollTo({
       top: scrollY,
       behavior: "smooth",

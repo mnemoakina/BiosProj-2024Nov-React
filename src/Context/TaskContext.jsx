@@ -1,7 +1,6 @@
-import React, { createContext, useContext, useReducer, useEffect } from "react";
+import { createContext, useContext, useReducer, useEffect } from "react";
 import axios from "axios";
 
-// Estado inicial de las tareas
 const initialTaskState = {
   tasks: [],
   filter: "all",
@@ -9,7 +8,6 @@ const initialTaskState = {
   isEditing: false,
 };
 
-// Definir el reducer para manejar el estado de las tareas
 const taskReducer = (state, action) => {
   switch (action.type) {
     case "SET_TASKS":
@@ -41,7 +39,6 @@ const taskReducer = (state, action) => {
   }
 };
 
-// Crear el contexto
 const TaskContext = createContext();
 
 // Custom hook para usar el contexto
@@ -63,7 +60,7 @@ export const TaskProvider = ({ children }) => {
     fetchTasks();
   }, []);
 
-  // Función para agregar o actualizar una tarea
+  // Función que agrega o actualiza una tarea
   const saveTask = async (task) => {
     try {
       if (task.id) {

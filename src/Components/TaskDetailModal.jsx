@@ -1,5 +1,6 @@
 import "./TaskModal.css";
 
+// Agrego el uso de stopPropagation para discriminar eventos al clickear.
 const TaskDetailModal = ({ task, onClose }) => {
   return (
     <div className="modal-backdrop" onClick={onClose}>
