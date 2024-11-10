@@ -1,39 +1,39 @@
 {
   "todos": [
     {
-      "name": "📊 Finish project report111111",
-      "description": "📝 Complete the final report for the project.33333333333333333wwwww",
-      "creator": "11111111111",
-      "isCompleted": true,
-      "id": "aae0"
-    },
-    {
-      "name": "🏥 Schedule doctor appointment5555",
-      "description": "󰞯 Annual check-up with Dr. Smith.444",
-      "creator": "Charlie333",
-      "isCompleted": true,
-      "id": "be65"
-    },
-    {
-      "name": "dnen",
-      "description": "enennnnnn",
-      "creator": "tttttttttttttttttttttttttttttttttttttt",
+      "id": 1,
+      "name": "🛒 Buy groceries",
       "isCompleted": false,
-      "id": "cb7f"
+      "description": "🥛 Milk, 🍞 Bread, 🥚 Eggs, and 🍏 Fruits",
+      "creator": "Alice"
     },
     {
-      "id": "afcf",
-      "name": "wwwwwwwww",
-      "description": "eeeeeeeeeddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
-      "creator": "222222222222222222222",
-      "isCompleted": false
+      "id": 2,
+      "name": "📊 Finish project report",
+      "isCompleted": false,
+      "description": "📝 Complete the final report for the project.",
+      "creator": "Bob"
     },
     {
-      "id": "1731190553063",
-      "name": "x",
-      "description": "v",
-      "creator": "vvvvvvvvvvvvvvvvvvvvv",
-      "isCompleted": false
+      "id": 3,
+      "name": "🏥 Schedule doctor appointment",
+      "isCompleted": true,
+      "description": "󰞯 Annual check-up with Dr. Smith.",
+      "creator": "Charlie"
+    },
+    {
+      "id": 4,
+      "name": "🧹 Clean the house",
+      "isCompleted": false,
+      "description": "🧼 Vacuum, dust, and organize the living room.",
+      "creator": "Diana"
+    },
+    {
+      "id": 5,
+      "name": "📖 Read a book",
+      "isCompleted": true,
+      "description": "📚 Finish reading 'The Great Gatsby'.",
+      "creator": "Ethan"
     }
   ]
 }
