@@ -19,7 +19,7 @@ Esta app permite agregar, editar, eliminar y filtrar tareas con una interfaz int
 
 Para ejecutar este proyecto en tu máquina, necesitas tener instalados:
 
-- **Node.js**: La última versión LTS de Node.js (v18 o superior).
+- **Node.js**: (v18 LTS o superior).
 - **npm**: El gestor de paquetes de Node.js.
 
 ---
