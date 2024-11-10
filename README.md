@@ -1,6 +1,6 @@
 # Todo List App
 
-Esta app permite agregar, editar, eliminar y filtrar tareas con una interfaz interactiva y efectos visuales suaves.
+Esta app permite agregar, editar, eliminar y filtrar tareas con una interfaz elegante y práctica.
 
 ---
 
@@ -9,9 +9,9 @@ Esta app permite agregar, editar, eliminar y filtrar tareas con una interfaz int
 - **Gestión de tareas**: Puedes agregar, editar y eliminar tareas fácilmente.
 - **Filtros**: Filtra las tareas entre completadas y no completadas.
 - **Modal de tarea**: Cada tarea tiene un botón para editarla o eliminarla. Además, se utiliza un modal para agregar nuevas tareas o editar las existentes.
-- **Estilo elegante**: Estilo limpio con animaciones sutiles y transiciones de botones.
-- **Interactividad**: Los botones tienen efectos de hover y animaciones al interactuar con ellos.
-- **Persistencia**: Las tareas se guardan en un archivo JSON.
+- **Estilo elegante**: Estilo limpio con animaciones en los botones.
+- **Interactividad**: Los botones tienen animaciones al interactuar con ellos.
+- **Persistencia**: Las tareas se guardan en un archivo JSON. (ubicado por defecto en "public/db.json")
 
 ---
 
