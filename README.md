@@ -1,6 +1,5 @@
 # Todo List App
 
-**Una aplicación de lista de tareas moderna y elegante, construida con React.**  
 Esta app permite agregar, editar, eliminar y filtrar tareas con una interfaz interactiva y efectos visuales suaves.
 
 ---
@@ -12,7 +11,7 @@ Esta app permite agregar, editar, eliminar y filtrar tareas con una interfaz int
 - **Modal de tarea**: Cada tarea tiene un botón para editarla o eliminarla. Además, se utiliza un modal para agregar nuevas tareas o editar las existentes.
 - **Estilo elegante**: Estilo limpio con animaciones sutiles y transiciones de botones.
 - **Interactividad**: Los botones tienen efectos de hover y animaciones al interactuar con ellos.
-- **Persistencia**: Las tareas se guardan en un archivo JSON (ubicado en la carpeta `public/data/db.json`).
+- **Persistencia**: Las tareas se guardan en un archivo JSON.
 
 ---
 
@@ -34,13 +33,12 @@ Sigue estos pasos para clonar el proyecto, instalar dependencias y ejecutarlo:
    Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/todo-list-app.git
+   git clone https://github.com/mnemoakina/BiosProj-2024Nov-React.git
 
 2. **Instalar dependencias**:
   
    Navega a la carpeta del proyecto y ejecuta el siguiente comando para instalar las dependencias necesarias:
    ```bash
-   cd todo-list-app
    npm install
    ```
 
