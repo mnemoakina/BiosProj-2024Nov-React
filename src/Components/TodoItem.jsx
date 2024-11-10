@@ -1,5 +1,3 @@
-import React from "react";
-
 const TodoItem = ({ task, onEditTask, onDeleteTask, onToggleComplete }) => {
   return (
     <div className={`task-item ${task.isCompleted ? "completed" : "pending"}`}>

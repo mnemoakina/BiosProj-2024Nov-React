@@ -11,15 +11,15 @@
       "name": "🏥 Schedule doctor appointment5555",
       "description": "󰞯 Annual check-up with Dr. Smith.444",
       "creator": "Charlie333",
-      "isCompleted": false,
+      "isCompleted": true,
       "id": "be65"
     },
     {
-      "id": "cb7f",
-      "name": "🧹 Clean the houses",
+      "name": "dnen",
+      "description": "enennnnnn",
+      "creator": "tttttttttttttttttttttttttttttttttttttt",
       "isCompleted": false,
-      "description": "🧼 Vacuum, dust, and organize the living rooms.",
-      "creator": "Dianas"
+      "id": "cb7f"
     },
     {
       "id": "afcf",
@@ -27,13 +27,6 @@
       "description": "eeeeeeeeeddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
       "creator": "222222222222222222222",
       "isCompleted": false
-    },
-    {
-      "name": "Nadar",
-      "description": "24444",
-      "creator": "231",
-      "isCompleted": false,
-      "id": "1731180471207"
     },
     {
       "id": "1731190553063",

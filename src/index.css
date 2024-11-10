@@ -4,12 +4,14 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   background-color: #1e1e2f;
   color: #e0e0e0;
+  font-family: Arial, sans-serif;
 }
 
+/* Contenedor principal */
 .app-container {
   width: 90vw;
   max-width: 800px;
@@ -17,9 +19,10 @@ body {
   background-color: #2b2b3d;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
 }
 
-/* Title Style */
+/* Título */
 .app-title {
   font-size: 2.5rem;
   color: #61afef;
@@ -29,15 +32,74 @@ body {
   animation: fadeInTitle 3s ease-in-out infinite alternate;
 }
 
+/* Animación para el título */
+@keyframes fadeInTitle {
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Botones de Filtro y Add Task */
+.header-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header-controls .filter-button,
+.header-controls .add-task-btn {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  flex: 1;
+  max-width: 120px;
+  width: 120px;
+}
+
+/* Estado activo del botón de filtro */
+.filter-button.active {
+  background-color: #388e3c;
+}
+
+.filter-button:hover,
+.add-task-btn:hover {
+  background-color: #45a049;
+}
+
+/* Lista de tareas */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
 /* Task Item Container */
 .task-item {
   background-color: #33334d;
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-  position: relative;
-  margin-bottom: 10px;
   transition: transform 0.2s ease;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .task-item:hover {
@@ -46,10 +108,12 @@ body {
 
 .task-item.completed {
   border-left: 5px solid #4CAF50;
+  padding-left: 10px;
 }
 
 .task-item.pending {
   border-left: 5px solid #ffab00;
+  padding-left: 10px;
 }
 
 .task-title {
@@ -60,6 +124,9 @@ body {
 .task-description {
   font-size: 1rem;
   color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .task-creator {
@@ -77,9 +144,14 @@ body {
 }
 
 /* Button Styles */
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
 .button-container button {
   padding: 8px 16px;
-  margin-right: 5px;
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -107,12 +179,13 @@ body {
 
 .modal-content {
   background-color: #2b2b3d;
-  padding: 20px;
+  padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.6);
   width: 100%;
   max-width: 400px;
   color: #e0e0e0;
+  position: relative;
 }
 
 .close-modal {
@@ -126,14 +199,44 @@ body {
   cursor: pointer;
 }
 
+/* Form Container Styles */
 .form-container input[type="text"],
 .form-container textarea {
-  width: 100%;
+  width: calc(100% - 20px);
+  /* Añade margen derecho */
   padding: 10px;
   margin-top: 10px;
   background-color: #3a3a55;
   color: #e0e0e0;
   border: none;
   border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   resize: none;
+  /* Evita que el textarea sea redimensionable */
+}
+
+.form-container textarea {
+  height: 80px;
+  overflow-y: auto;
+}
+
+/* Botón de Confirmación en el Modal */
+.form-container button {
+  width: 100%;
+  /* Igual ancho que los inputs */
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5a623;
+  color: #29293d;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+/* Cambio de color en hover sin cambio de tamaño */
+.form-container button:hover {
+  background-color: #ff6b6b;
 }
