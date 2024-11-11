@@ -34,13 +34,12 @@ Sigue estos pasos para clonar el proyecto, instalar dependencias y ejecutarlo:
    Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/todo-list-app.git
+   git clone https://github.com/mnemoakina/BiosProj-2024Nov-React.git
 
 2. **Instalar dependencias**:
   
    Navega a la carpeta del proyecto y ejecuta el siguiente comando para instalar las dependencias necesarias:
    ```bash
-   cd todo-list-app
    npm install
    ```
 
